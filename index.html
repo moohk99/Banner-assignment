@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>모션 웹배너 제작</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+    <style>
+        .banner {
+            background: #ccc;
+            width: 700px;
+            height: 400px;
+            position: relative;
+        }
+
+        .banner > video {
+            position: absolute;
+        }
+        .banner > header {
+            position: relative;
+            color: #fff;
+        }
+
+        .banner .btn_call {
+            position: absolute;
+            left: 88px;
+            top: 318px;
+            display: block;
+            width: 170px;
+            height: 40px;
+            background: #fff;
+            color: #000;
+            text-align: center;
+            line-height: 40px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            animation-name: title;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-delay: 0.5s;
+        }
+
+        header {
+            font-family: 'Pinyon Script', cursive;
+        }
+
+        header > h1 > span:first-child {
+            font-size: 60px;
+            display: block;
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            text-shadow: 2px 2px 4px #000;
+            opacity: 0;
+            animation-name:title ;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+
+        header > h1 > span:last-child {
+            font-size: 40px;
+            display: block;
+            position: absolute;
+            left: 10px;
+            top: 200px;
+            text-shadow: 2px 2px 4px #000;
+            opacity: 0;
+            animation-name:title ;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes title{
+            0%{
+                opacity: 0;
+            }
+            
+            15%{
+                opacity: 0;
+            }
+            
+            30%{
+                opacity: 1;
+            }
+            
+            90%{
+                opacity: 1;
+            }
+            
+            100%{
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div href="#" class="banner">
+        <video src="./coffee.mp4" autoplay muted></video>
+        <header>
+            <h1><span>Don't pour too much water</span>
+                <span>when brewing</span>
+            </h1>
+            <a href="#" class="btn_call">주문하기</a>
+        </header>
+    </div>
+</body>
+</html>
